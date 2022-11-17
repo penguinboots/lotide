@@ -15,6 +15,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
 };
 
+// Given array with other arrays inside, return flattened single-level array
 const flatten = function(arr) {
   let flattened = [];
   for (let obj of arr) {
