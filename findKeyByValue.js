@@ -5,6 +5,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
 };
 
+// given object and string, if string appears in value of object, return corresponding key, else return undefined
 const findKeyByValue = function(searchObj, searchVal) {
   let result = undefined;
   // iterate through searchObj and examine each key : value pair
@@ -15,7 +16,6 @@ const findKeyByValue = function(searchObj, searchVal) {
     }
   }
   return result;
-
 };
 
 const bestTVShowsByGenre = {
