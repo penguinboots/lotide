@@ -1,22 +1,22 @@
-// Return true if arrays are equal
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// // Return true if arrays are equal
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
-// Check if two arrays are equal
-const assertArraysEqual = function(actual, expected) {
-  eqArrays(actual, expected) ?
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`) :
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
+// // Check if two arrays are equal
+// const assertArraysEqual = function(actual, expected) {
+//   eqArrays(actual, expected) ?
+//     console.log(`✅ Assertion Passed: ${actual} === ${expected}`) :
+//     console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
+// };
 
 const letterPositions = function(sentence) {
   const results = {};
@@ -36,6 +36,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-let result1 = letterPositions("hello");
-assertArraysEqual(result1["l"], [2, 3]);
-assertArraysEqual(result1["h"], [0]);
+module.exports = letterPositions;
+
+// let result1 = letterPositions("hello");
+// assertArraysEqual(result1["l"], [2, 3]);
+// assertArraysEqual(result1["h"], [0]);
