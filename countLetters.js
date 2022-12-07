@@ -1,9 +1,9 @@
-// Check if two values are equal
-const assertEqual = function(actual, expected) {
-  actual === expected ?
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`) :
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
+// // Check if two values are equal
+// const assertEqual = function(actual, expected) {
+//   actual === expected ?
+//     console.log(`✅ Assertion Passed: ${actual} === ${expected}`) :
+//     console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
+// };
 
 // Take sentence as string, return count of each of the letters in sentence
 
@@ -23,6 +23,8 @@ const countLetters = function(sentence) {
   return result;
 };
 
-const result1 = countLetters("abcddd");
-assertEqual(result1["a"], 1);
-assertEqual(result1["d"], 3);
+module.exports = countLetters;
+
+// const result1 = countLetters("abcddd");
+// assertEqual(result1["a"], 1);
+// assertEqual(result1["d"], 3);
