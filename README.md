@@ -26,10 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
-
 * `head(array)`: Returns first element of given array, or undefined if empty array
 * `tail(array)`: Returns all elements of array except first. Arrays with one element or an empty array return an empty array.
 * `middle(array)`: Returns the middle value(s) of given array, returns empty array if given array of length 1 or 2
@@ -42,3 +38,5 @@ The following functions are currently implemented:
 * `map(array, callback)`: Returns new array based on results of callback function
 * `takeUntil(array, callback)`: Returns slice of given array with elements taken from beginning until callback returns truthy value
 * `without(array, element)`: Returns subset of given array, removing unwanted elements
+* `eqArrays(array1, array2)`: Returns true if arrays are the same
+* `eqObjects(obj1, obj2)`: Returns true if objects are the same
